@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20-ene-2020 16:13:17 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="bv" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Class" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="class">
+        <composite-id class="model.ClassId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="classId" type="int">
+                <column name="class_id"/>
+            </key-property>
+            <key-property name="className" type="string">
+                <column length="20" name="class_name"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

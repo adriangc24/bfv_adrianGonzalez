@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-catalog="bv" match-name="bfplayer" />
+	<table-filter match-catalog="bv" match-name="class" />
+	<table-filter match-catalog="bv" match-name="device" />
+	<table-filter match-catalog="bv" match-name="weapon" />
+	<table catalog="bv" name="bfplayer">
+		<column name="user_id"></column>
+		<column name="kills"></column>
+		<column name="Deads"></column>
+		<column name="primary_weapon"></column>
+		<column name="class_id"></column>
+		<column name="device1"></column>
+	</table>
+	<table catalog="bv" name="class">
+		<column name="class_id"></column>
+		<column name="class_name"></column>
+	</table>
+	<table catalog="bv" name="device">
+		<column name="device_id"></column>
+		<column name="name"></column>
+	</table>
+	<table catalog="bv" name="weapon">
+		<column name="name"></column>
+		<column name="weapon_id"></column>
+		<column name="damage"></column>
+		<column name="accuracy"></column>
+		<column name="type"></column>
+	</table>
+</hibernate-reverse-engineering>
